@@ -1,3 +1,8 @@
+@charset "UTF-8";
+@font-face {
+  font-family: arrus;
+  src: url(../font/Arrus.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +15,34 @@ html {
   height: 100px;
 }
 
+body {
+  font-family: Georgia, serif;
+  font-family: arrus;
+  font-size: 1.4vw;
+}
+body p {
+  margin: 0;
+}
 body a {
   text-decoration: none;
+  color: black;
 }
 body header .headerClass {
-  margin: 1vw 3vw;
+  padding: 1vw 3vw;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 body header .headerClass span {
   display: flex;
@@ -29,10 +53,12 @@ body header .headerClass span .logo img {
 }
 body header .headerClass span .menuClass .menu {
   font-size: 2vw;
+  color: white;
 }
 body header .headerClass span .menuClass .offcanvas {
   width: -moz-fit-content;
   width: fit-content;
+  min-height: 100vh;
 }
 body header .headerClass span .menuClass .offcanvas .offcanvas-header .offcanvas-title {
   display: flex;
@@ -63,6 +89,230 @@ body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+body main .mainClass .postClass hr {
+  margin: 2vw 0;
+  opacity: 0.5;
+  border: 0.7px solid black;
+}
+body main .mainClass .postClass .postHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw 20vw;
+}
+body main .mainClass .postClass .postHeader .name {
+  text-align: center;
+  font-size: 2.5vw;
+  margin: 2vw 0;
+  font-weight: bold;
+  width: 100%;
+}
+body main .mainClass .postClass .postHeader .info {
+  display: flex;
+  align-items: center;
+}
+body main .mainClass .postClass .postHeader .info a {
+  margin-right: 1vw;
+  font-size: 1.2vw;
+}
+body main .mainClass .postClass .postHeader .info p {
+  font-family: qucicksand;
+  font-size: 1.2vw;
+}
+body main .mainClass .postClass .postHeader .info .circle {
+  font-size: 0.4vw;
+  margin-right: 1vw;
+}
+body main .mainClass .postClass .txtBlock {
+  margin: 3vw 19vw;
+}
+body main .mainClass .postClass .txtBlock .video {
+  display: flex;
+  justify-content: center;
+}
+body main .mainClass .postClass .txtBlock .video #ytplayer {
+  width: 60vw;
+  height: 50vh;
+  border-radius: 12px;
+}
+body main .mainClass .postClass .txtBlock .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70vh;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .postClass .txtBlock blockquote {
+  border-left: 1px solid #ccc;
+  margin: 2vw 0;
+  padding: 1vw;
+  quotes: "“" "”" "‘" "’";
+}
+body main .mainClass .postClass .txtBlock blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+body main .mainClass .postClass .txtBlock blockquote p {
+  display: inline;
+}
+body main .mainClass .postClass .autor {
+  text-align: start;
+  margin: 2vw 20vw;
+}
+body main .mainClass .postClass .shareBlock {
+  display: flex;
+  justify-content: center;
+}
+body main .mainClass .postClass .shareBlock .links a {
+  margin: 0 1vw;
+  font-size: 2vw;
+}
+body main .mainClass .postClass .shareBlock .links button {
+  margin: 0 1vw;
+  font-size: 2vw;
+}
+body main .mainClass hr {
+  margin: 3vw;
+  border: 1px solid black;
+  opacity: 1;
+}
+body main .mainClass .faceClass {
+  display: grid;
+  margin: 3vw;
+  grid-template-columns: auto;
+  row-gap: 3vw;
+}
+body main .mainClass .faceClass .personBlock {
+  align-items: center;
+  display: flex;
+}
+body main .mainClass .faceClass .personBlock .img {
+  margin-right: 1vw;
+}
+body main .mainClass .faceClass .personBlock .img a img {
+  width: 50vw;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .faceClass .personBlock .info {
+  display: flex;
+  flex-direction: column;
+}
+body main .mainClass .faceClass .personBlock .info .cates {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 2vw;
+}
+body main .mainClass .faceClass .personBlock .info .name {
+  font-weight: bold;
+  margin: 1vw 0;
+  font-size: 3vw;
+}
+body main .mainClass .faceClass .personBlock .info .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  line-clamp: 5;
+  box-orient: vertical;
+}
+body main .mainClass .faceClass .personBlock .info .date {
+  text-align: end;
+  color: rgba(30, 30, 30, 0.5);
+  font-family: quick;
+}
+body main .mainClass .editorsClass {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  justify-content: space-between;
+  margin: 3vw;
+  row-gap: 3vw;
+}
+body main .mainClass .editorsClass .editorPosts .img a img {
+  width: 45vw;
+  height: 55vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .editorsClass .editorPosts .info {
+  display: flex;
+  flex-direction: column;
+  bottom: 1vw;
+}
+body main .mainClass .editorsClass .editorPosts .info a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+body main .mainClass .editorsClass .editorPosts .info p {
+  text-align: end;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .mainClass .lastedClass {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  justify-content: space-between;
+  margin: 3vw;
+  row-gap: 3vw;
+}
+body main .mainClass .lastedClass .postClass .img a img {
+  width: 30vw;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .lastedClass .postClass .info {
+  margin-top: 1vw;
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .mainClass .lastedClass .postClass .info a:first-child {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .mainClass .lastedClass .postClass .info a:hover {
+  color: #000000;
+}
+body main .mainClass .lastedClass .postClass .info a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+body main .mainClass .lastedClass .postClass .info a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body main .mainClass .lastedClass .postClass .info p {
+  text-align: end;
+  font-family: quicksand;
+  color: rgba(30, 30, 30, 0.5);
+}
 body main .mainClass .lahb {
   display: table;
   width: 100%;
@@ -84,8 +334,8 @@ body main .mainClass .lahb .lastArticlesHeader .line::after {
   content: ".";
   font-size: 0;
   color: transparent;
-  height: 2px;
-  background: #000;
+  height: 0.5px;
+  background: rgba(30, 30, 30, 0.5);
   vertical-align: middle;
   position: relative;
   top: -1px;
@@ -105,9 +355,11 @@ body main .mainClass .coverClass {
   justify-content: center;
   height: 46vw;
   margin: 3vw;
+  width: 94%;
 }
 body main .mainClass .coverClass .left {
   margin-right: 1vw;
+  width: 100%;
 }
 body main .mainClass .coverClass .left a {
   height: 100%;
@@ -130,6 +382,26 @@ body main .mainClass .coverClass .left a .info {
   bottom: 1vw;
   color: white;
   padding: 1vw;
+  font-size: 3vw;
+  margin: 0px auto;
+}
+body main .mainClass .coverClass .left a .info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 3px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  transition: background-position 1s;
+}
+body main .mainClass .coverClass .left a:hover .info p {
+  background-position: 0% 100%;
 }
 body main .mainClass .coverClass .right {
   display: flex;
@@ -153,6 +425,127 @@ body main .mainClass .coverClass .right .box a .info {
   padding: 1vw;
   color: white;
 }
+body main .mainClass .coverClass .right .box a .info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 1px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  transition: background-position 1s;
+}
+body main .mainClass .coverClass .right .box a:hover .info p {
+  background-position: 0% 100%;
+}
 body main .mainClass .coverClass .right .box:first-child {
   margin-bottom: 1vw;
+}
+body footer {
+  background-color: #000000;
+  border-top: 1px solid white;
+  padding: 3vw 10vw;
+  color: white;
+  margin-top: 3vw;
+}
+body footer a {
+  color: white;
+}
+body footer .btn {
+  color: white;
+}
+body footer .footerClass .float1 {
+  display: flex;
+  justify-content: space-between;
+}
+body footer .footerClass .float1 .box {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+body footer .footerClass .float1 .box a {
+  margin: 0.5vw 0;
+}
+body footer .footerClass .float1 .box .img img {
+  width: 10vw;
+}
+body footer .footerClass .float1 .box .socialicons {
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+}
+body footer .footerClass .float1 .box .socialicons a {
+  margin-right: 2vw;
+  font-size: 2vw;
+  border: 1px solid white;
+  padding: 0.5vw 1vw;
+  border-radius: 100%;
+}
+body footer .footerClass .float1 .box .socialicons img {
+  height: 2.5vw;
+  padding-bottom: 5px;
+}
+body footer .footerClass .float1 .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body footer .footerClass .float1 .info a {
+  margin: 0.5vw 0;
+  font-size: 2vw;
+}
+body footer .footerClass .float2 {
+  margin-top: 2vw;
+}
+body .btnToTopBlock #btnToTop {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: -30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+  transform: rotate(-90deg);
+  background-color: whitesmoke;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+body .btnToTopBlock #btnToTop i {
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+body .btnToTopBlock #btnToTop:hover i {
+  transform: translateX(5px);
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 3vw;
+  }
+  body header .headerClass span .logo img {
+    width: 30vw;
+  }
+  body header .headerClass span .menuClass .menu {
+    font-size: 6vw;
+  }
+  body header .headerClass span:nth-child(2) {
+    display: none;
+  }
+  body main .mainClass .welcomeCarusel .div .carousel-inner .carousel-item div h5 a {
+    font-size: 6vw !important;
+  }
+  body main .mainClass .welcomeCarusel .div .carousel-inner .carousel-item div a {
+    font-size: 9vw !important;
+  }
 }/*# sourceMappingURL=style.css.map */
