@@ -542,6 +542,18 @@ body .btnToTopBlock #btnToTop:hover i {
   body header .headerClass span:nth-child(2) {
     display: none;
   }
+  body main .mainClass .coverClass {
+    display: none;
+  }
+  body main .mainClass .lastedClass {
+    display: none;
+  }
+  body main .mainClass .editorsClass {
+    display: none;
+  }
+  body main .mainClass .faceClass {
+    display: none;
+  }
   body main .mainClass .welcomeCarusel .div .carousel-inner .carousel-item div h5 a {
     font-size: 6vw !important;
   }

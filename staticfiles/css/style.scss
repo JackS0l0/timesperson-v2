@@ -596,6 +596,18 @@ body{
         }
         main{
             .mainClass{
+                .coverClass{
+                    display: none;
+                }
+                .lastedClass{
+                    display: none;
+                }
+                .editorsClass{
+                    display: none;
+                }
+                .faceClass{
+                    display: none;
+                }
                 .welcomeCarusel{
                     .div{
                         .carousel-inner{
