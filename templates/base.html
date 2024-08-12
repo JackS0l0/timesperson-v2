@@ -1,0 +1,12 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+{% include 'addons/head.html' %}
+<body>
+    {% include 'addons/header.html' %}
+    {% block main %}{% endblock %}
+    {% include 'addons/footer.html' %}
+    {% include 'addons/scripts.html' %}
+</body>
+</html>

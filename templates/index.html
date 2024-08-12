@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <div class="mainClass">
+            <div class="welcomeCarusel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        {% for post in articles_slide2 %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
+                                <img src="{{post.img}}" class="d-block w-100" alt="{{post.name}}" style="filter: brightness(50%); height: 100vh; object-fit: cover; object-position: top;">
+                                <div class="carousel-caption d-md-block" style="bottom: 40%;">
+                                    <h5 ><a href="{% url 'categoriesDetail' post.category.slug post.category.id %}" style="color: white;">{{post.category}}</a></h5>
+                                    <a href="{% url 'articledetail' post.slug post.id %}" style="color: white;">{{post.name}}</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="lahb">
+                <div class="lastArticlesHeader">
+                    <div class="line"></div>
+                        <p>LASTES</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="coverClass">
+                <div class="left">
+                    {% for post in articles_1 %}
+                    <a href="{% url 'articledetail' post.slug post.id %}">
+                        <div class="img">
+                            <img src="{{post.img}}" alt="{{post.name}}">
+                        </div>
+                        <div class="info">
+                            <p>{{post.name}}</p>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+                <div class="right">
+                    <div class="box">
+                        {% for post in articles_2 %}
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <div class="img">
+                                    <img src="{{post.img}}" alt="{{post.name}}">
+                                </div>
+                                <div class="info">
+                                    <p>{{post.name}}</p>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                    <div class="box">
+                        {% for post in articles_3 %}
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <div class="img">
+                                    <img src="{{post.img}}" alt="{{post.name}}">
+                                </div>
+                                <div class="info">
+                                    <p>{{post.name}}</p>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="lahb">
+                <div class="lastArticlesHeader">
+                    <div class="line"></div>
+                        <p>Business</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="lastedClass">
+                {% for post in articles_412 %}
+                    <div class="postClass">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                            <div class="info">
+                                <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                                <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                                <p>{{post.date|date:"d F, Y"}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="lahb">
+                <div class="lastArticlesHeader">
+                    <div class="line"></div>
+                        <p>EDITOR'S PICKS</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="editorsClass">
+                {% for post in articles_slide3 %}
+                    <div class="editorPosts">
+                        <div class="img">
+                            <a href="#">
+                                <img src="{{post.img}}" alt="foto">
+                            </a>
+                            <div class="info">
+                                <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                                <a href="#">{{post.name}}</a>
+                                <p>{{post.date|date:"d F, Y"}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="lahb">
+                <div class="lastArticlesHeader">
+                    <div class="line"></div>
+                        <p>FACES</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="faceClass">
+                {% for post in articles_face_last2 %}
+                    <div class="personBlock">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a class="cates" href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}" class="name">{{post.name}}</a>
+                            <p class="desc">{{post.txt_desc}}</p>
+                            <p class="date">{{post.date|date:"d F, Y"}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <hr>
+            <div class="caruselClass">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        {% for post in articles_slide %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
+                                <a href="{% url 'articledetail' post.slug post.id %}">
+                                    <img src="{{post.img}}" class="d-block w-100" alt="{{post.name}}" style="filter: brightness(50%); height: 60vh; object-fit: cover; object-position: top;">
+                                </a>
+                                <div class="carousel-caption d-md-block">
+                                    <h5><a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a></h5>
+                                    <p>{{post.name}}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="lahb">
+                <div class="lastArticlesHeader">
+                    <div class="line"></div>
+                        <p>Events</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="lastedClass">
+                {% for post in articles_1318 %}
+                    <div class="postClass">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                            <div class="info">
+                                <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                                <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                                <p>{{post.date|date:"d F, Y"}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

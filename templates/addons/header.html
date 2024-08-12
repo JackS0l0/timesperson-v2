@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <div class="headerClass">
+        <span>
+            <a href="{% url 'homepage' %}" class="logo"><img src="https://res.cloudinary.com/dqtawsw9t/image/upload/f_auto,q_auto/hil7riojies8ewmlbso2" alt="logo"></a>
+        </span>
+        <span>
+            {% for post in categories_navbar %}
+                <a href="{% url 'categoriesDetail' post.slug post.id %}" style="color: white;margin: 0 1vw;">{{post.name}}</a>
+            {% endfor %}
+        </span>
+        <span>
+            <div class="menuClass">
+                <button class="btn menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                            <button class="btn"><i class="bi bi-cloud-moon"></i></button>
+                            <div class="langClass">
+                                <div class="dropdown">
+                                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{% url 'set-language' 'ru' %}">RU</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'set-language' 'en' %}">EN</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'set-language' 'az' %}">AZ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn"><i class="bi bi-search"></i></a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="bodyClass">
+                            {% for post in categories %}
+                                <a href="{% url 'categoriesDetail' post.slug post.id %}" class="btn">{{post.name}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+</header>

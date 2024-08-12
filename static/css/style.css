@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  height: 100px;
+}
+
+body a {
+  text-decoration: none;
+}
+body header .headerClass {
+  margin: 1vw 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+body header .headerClass span {
+  display: flex;
+  align-items: center;
+}
+body header .headerClass span .logo img {
+  width: 10vw;
+}
+body header .headerClass span .menuClass .menu {
+  font-size: 2vw;
+}
+body header .headerClass span .menuClass .offcanvas {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body header .headerClass span .menuClass .offcanvas .offcanvas-header .offcanvas-title {
+  display: flex;
+  align-items: center;
+}
+body header .headerClass span .menuClass .offcanvas .offcanvas-header .offcanvas-title button {
+  background: none;
+  border: 0;
+}
+body header .headerClass span .menuClass .offcanvas .offcanvas-body {
+  display: flex;
+  justify-content: flex-end;
+}
+body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a {
+  margin: 0.5vw 0;
+  text-transform: uppercase;
+  font-size: 2vw;
+  color: grey;
+  text-wrap: nowrap;
+}
+body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a:hover {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body main .mainClass .lahb {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  margin: 3vw 0;
+}
+body main .mainClass .lahb .lastArticlesHeader {
+  display: table-row;
+  line-height: 1.5em;
+  font-size: 2em;
+  white-space: nowrap;
+}
+body main .mainClass .lahb .lastArticlesHeader .line {
+  display: table-cell;
+}
+body main .mainClass .lahb .lastArticlesHeader .line::after {
+  display: inline-block;
+  width: 100%;
+  content: ".";
+  font-size: 0;
+  color: transparent;
+  height: 2px;
+  background: #000;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+body main .mainClass .lahb .lastArticlesHeader p {
+  font-size: 3vw;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle;
+  width: 1px;
+  table-layout: fixed;
+  padding: 0 2vw;
+}
+body main .mainClass .coverClass {
+  display: flex;
+  justify-content: center;
+  height: 46vw;
+  margin: 3vw;
+}
+body main .mainClass .coverClass .left {
+  margin-right: 1vw;
+}
+body main .mainClass .coverClass .left a {
+  height: 100%;
+  position: relative;
+}
+body main .mainClass .coverClass .left a .img {
+  height: 100%;
+}
+body main .mainClass .coverClass .left a .img img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .coverClass .left a .info {
+  position: absolute;
+  bottom: 1vw;
+  color: white;
+  padding: 1vw;
+}
+body main .mainClass .coverClass .right {
+  display: flex;
+  flex-direction: column;
+}
+body main .mainClass .coverClass .right .box a {
+  position: relative;
+}
+body main .mainClass .coverClass .right .box a .img img {
+  width: 22.5vw;
+  height: 22.5vw;
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main .mainClass .coverClass .right .box a .info {
+  position: absolute;
+  bottom: 1vw;
+  padding: 1vw;
+  color: white;
+}
+body main .mainClass .coverClass .right .box:first-child {
+  margin-bottom: 1vw;
+}/*# sourceMappingURL=style.css.map */

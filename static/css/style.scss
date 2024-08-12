@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    height: 100px;
+}
+body{
+    a{
+        text-decoration: none;
+    }
+    header{
+        .headerClass{
+            margin: 1vw 3vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+            span{
+                display: flex;
+                align-items: center;
+                .logo{
+                    img{
+                        width: 10vw;
+                    }
+                }
+                .menuClass{
+                    .menu{
+                        font-size: 2vw;
+                    }
+                    .offcanvas{
+                        width: fit-content;
+                        .offcanvas-header{
+                            .offcanvas-title{
+                                display: flex;
+                                align-items: center;
+                                button{
+                                    background: none;
+                                    border: 0;
+                                }
+                            }
+                        }
+                        .offcanvas-body{
+                            display: flex;
+                            justify-content: flex-end;
+                            .bodyClass{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                a{
+                                    margin: 0.5vw 0;
+                                    text-transform: uppercase;
+                                    font-size: 2vw;
+                                    color: grey;
+                                    text-wrap: nowrap;
+                                }
+                                a:hover{
+                                    color: black;
+                                    text-decoration: underline;
+                                    text-underline-offset: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .mainClass{
+            .lahb{
+                display:table;
+                width:100%;
+                max-width:100%;
+                margin: 3vw 0;
+                .lastArticlesHeader{
+                    display:table-row;
+                    line-height:1.5em;
+                    font-size:2em;
+                    white-space:nowrap;
+                    .line{
+                        display: table-cell;
+                    }
+                    .line::after{
+                        display:inline-block;
+                        width:  100%;
+                        content:".";
+                        font-size:0;
+                        color:transparent;
+                        height:2px;
+                        background:#000;
+                        vertical-align:middle;
+                        position:relative;
+                        top:-1px;
+                    }
+                    p{
+                        font-size:3vw;
+                        overflow:hidden;
+                        text-transform: uppercase;
+                        display:table-cell;
+                        vertical-align:middle;
+                        width:1px;
+                        table-layout:fixed;
+                        padding: 0 2vw;
+                    }
+                }
+            }
+            .coverClass{
+                display: flex;
+                justify-content: center;
+                height: 46vw;
+                margin: 3vw;
+                .left{
+                    margin-right: 1vw;
+                    a{
+                        height: 100%;
+                        position: relative;
+                        .img{
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                filter: brightness(50%);
+                                object-fit: cover;
+                                object-position: top;
+                            }
+                        }
+                        .info{
+                            position: absolute;
+                            bottom: 1vw;
+                            color: white;
+                            padding: 1vw;
+                        }
+                    }
+                }
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    .box{
+                        a{
+                            position: relative;
+                            .img{
+                                img{
+                                    width: 22.5vw;
+                                    height: 22.5vw;
+                                    filter: brightness(50%);
+                                    object-fit: cover;
+                                    object-position: top;
+                                }
+                            }
+                            .info{
+                                position: absolute;
+                                bottom: 1vw;
+                                padding: 1vw;
+                                color: white;
+                            }
+                        }
+                    }
+                    .box:first-child{
+                        margin-bottom: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}
