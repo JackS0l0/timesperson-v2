@@ -221,11 +221,18 @@ body{
                             text-decoration: underline;
                             text-underline-offset: 3px;
                             font-size: 2vw;
+                            color: $grey;
+                        }
+                        .cates:hover{
+                            color: #000000;
                         }
                         .name{
                             font-weight: bold;
                             margin: 1vw 0;
                             font-size: 3vw;
+                        }
+                        .name:hover{
+                            text-decoration: underline;
                         }
                         .desc{
                             overflow: hidden;
@@ -267,6 +274,13 @@ body{
                         display: flex;
                         flex-direction: column;
                         bottom: 1vw;
+                        a:first-child{
+                            color: $grey;
+                            margin: 1vw 0;
+                        }
+                        a:first-child:hover{
+                            color: black;
+                        }
                         a{
                             overflow: hidden;
                             text-overflow: ellipsis;
@@ -277,6 +291,10 @@ body{
                             -webkit-box-orient: vertical;
                             line-clamp: 3;
                             box-orient: vertical;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
                         }
                         p{
                             text-align: end;

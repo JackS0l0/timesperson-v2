@@ -82,7 +82,9 @@
                 {% for post in articles %}
                     <div class="mobpost">
                         <div class="img">
-                            <img src="{{post.img}}" alt="{{post.name}}">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
                         </div>
                         <div class="info">
                             <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>

@@ -214,11 +214,18 @@ body main .mainClass .faceClass .personBlock .info .cates {
   text-decoration: underline;
   text-underline-offset: 3px;
   font-size: 2vw;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .mainClass .faceClass .personBlock .info .cates:hover {
+  color: #000000;
 }
 body main .mainClass .faceClass .personBlock .info .name {
   font-weight: bold;
   margin: 1vw 0;
   font-size: 3vw;
+}
+body main .mainClass .faceClass .personBlock .info .name:hover {
+  text-decoration: underline;
 }
 body main .mainClass .faceClass .personBlock .info .desc {
   overflow: hidden;
@@ -255,6 +262,13 @@ body main .mainClass .editorsClass .editorPosts .info {
   flex-direction: column;
   bottom: 1vw;
 }
+body main .mainClass .editorsClass .editorPosts .info a:first-child {
+  color: rgba(30, 30, 30, 0.5);
+  margin: 1vw 0;
+}
+body main .mainClass .editorsClass .editorPosts .info a:first-child:hover {
+  color: black;
+}
 body main .mainClass .editorsClass .editorPosts .info a {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -264,6 +278,10 @@ body main .mainClass .editorsClass .editorPosts .info a {
   -webkit-box-orient: vertical;
   line-clamp: 3;
   box-orient: vertical;
+}
+body main .mainClass .editorsClass .editorPosts .info a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 body main .mainClass .editorsClass .editorPosts .info p {
   text-align: end;
