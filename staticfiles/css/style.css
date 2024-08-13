@@ -116,6 +116,33 @@ body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a
 body main .mainClass {
   min-height: 50vh;
 }
+body main .mainClass .partnersClass {
+  margin: 10vw 20vw 5vw 20vw;
+  display: grid;
+  row-gap: 5vw;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  grid-template-columns: auto auto auto;
+}
+body main .mainClass .partnersClass .partner .img {
+  display: flex;
+  justify-content: center;
+}
+body main .mainClass .partnersClass .partner .img img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .mainClass .partnersClass .partner .info {
+  text-align: center;
+  margin-top: 1vw;
+  font-size: 2vw;
+}
+body main .mainClass .aboutClass {
+  margin: 10vw 20vw 5vw 20vw;
+}
 body main .mainClass .paginatorClass nav .pagination .page-item a {
   background: none;
   color: black;
@@ -692,6 +719,9 @@ body.dark-mode a {
   }
   body header .headerClass span:nth-child(2) {
     display: none;
+  }
+  body main .mainClass .aboutClass {
+    margin: 20vw 3vw 3vw 3vw;
   }
   body main .mainClass .mobClass {
     grid-template-columns: 90%;

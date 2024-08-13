@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <div class="mainClass">
+            <div class="aboutClass">
+                {% for post in about %}
+                    {{post.txt|safe}}
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

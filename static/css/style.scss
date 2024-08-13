@@ -120,6 +120,33 @@ body{
     }
     main{
         .mainClass{
+            .partnersClass{
+                margin: 10vw 20vw 5vw 20vw;
+                display: grid;
+                row-gap: 5vw;
+                column-gap: 3vw;
+                grid-template-columns: auto auto auto;
+                .partner{
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 10vw;
+                            height: 10vw;
+                            border-radius: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .info{
+                        text-align: center;
+                        margin-top: 1vw;
+                        font-size: 2vw;
+                    }
+                }
+            }
+            .aboutClass{
+                margin: 10vw 20vw 5vw 20vw;
+            }
             .paginatorClass{
                 nav{
                     .pagination{
@@ -833,6 +860,9 @@ body.dark-mode{
         }
         main{
             .mainClass{
+                .aboutClass{
+                    margin: 20vw 3vw 3vw 3vw;
+                }
                 .mobClass{
                     grid-template-columns: 90%;
                     justify-content: center;

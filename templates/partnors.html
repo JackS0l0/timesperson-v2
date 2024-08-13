@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <div class="mainClass">
+            <div class="partnersClass">
+                {% for post in partnors %}
+                    <div class="partner">
+                        <div class="img">
+                            <img src="{{post.img}}" alt="{{post.name}}">
+                        </div>
+                        <div class="info">
+                            <p>{{post.name}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}
