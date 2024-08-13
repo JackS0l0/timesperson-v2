@@ -21,4 +21,7 @@ class CategoriesDetail(ListView):
         data['articles']=Articles.objects.all().order_by('-date')
         data['categories']=Categories.objects.all().order_by('-date')
         data['categories_navbar']=Categories.objects.filter(navbar=True).order_by('-date')
+        category_id = self.kwargs.get('category_id')
+        category = Categories.objects.get(id=category_id)
+        data['category_name'] = category.name
         return data

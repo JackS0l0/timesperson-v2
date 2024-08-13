@@ -12,7 +12,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',mainviews.index,name='homepage'),
     path('articles/<slug:slug>/<int:pk>/',articlesviews.ArticleDetail.as_view(),name='articledetail'),
-    path('category/<slug:slug>/<int:pk>/',articlesviews.CategoriesDetail.as_view(),name='categoriesDetail'),
+    path('category/<slug:slug>/<int:category_id>/',articlesviews.CategoriesDetail.as_view(),name='categoriesDetail'),
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),

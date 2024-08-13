@@ -5,6 +5,7 @@ from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
+from django.db.models import Q
 from django.utils import translation
 def set_language(request, language):
     for lang, _ in settings.LANGUAGES:
@@ -35,8 +36,8 @@ def index(request):
         'articles_1': Articles.objects.all().order_by('-date')[0:1],
         'articles_2': Articles.objects.all().order_by('-date')[1:2],
         'articles_3': Articles.objects.all().order_by('-date')[2:3],
-        'articles_412': Articles.objects.all().order_by('-date')[3:9],
-        'articles_1318': Articles.objects.all().order_by('-date')[9:15],
-        'articles_face_last2': Articles.objects.filter(category__name='Faces').order_by('-date')[0:2],
+        'articles_412': Articles.objects.filter(Q(category__name='Business') | Q(category__name='Бизнес') | Q(category__name='Biznes')).order_by('-date')[0:6],
+        'articles_1318': Articles.objects.filter(Q(category__name='Events') | Q(category__name='События') | Q(category__name='Hadisələr')).order_by('-date')[0:6],
+        'articles_face_last2': Articles.objects.filter(Q(category__name='Faces') | Q(category__name='Лица') | Q(category__name='Simalar')).order_by('-date')[0:2],
     }
     return render(request,'index.html',data)

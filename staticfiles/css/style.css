@@ -44,6 +44,16 @@ body header .headerClass {
   -webkit-backdrop-filter: blur(4.7px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
+body header .headerClass span:nth-child(2) a {
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 1px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  transition: background-position 1s;
+}
+body header .headerClass span:nth-child(2) a:hover {
+  background-position: 0 100%;
+}
 body header .headerClass span {
   display: flex;
   align-items: center;
@@ -88,6 +98,12 @@ body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a
   color: black;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+body main .mainClass {
+  min-height: 50vh;
+}
+body main .mainClass .listClass {
+  margin-top: 15vh;
 }
 body main .mainClass hr {
   margin: 2vw 0;
@@ -575,11 +591,17 @@ body.dark-mode main hr {
 body.dark-mode main .mainClass .editorsClass .editorPosts .img .info a:first-child {
   color: rgba(255, 255, 255, 0.2);
 }
+body.dark-mode main .mainClass .editorsClass .editorPosts .img .info a:first-child:hover {
+  color: white;
+}
 body.dark-mode main .mainClass .editorsClass .editorPosts .img .info p {
   color: rgba(255, 255, 255, 0.2);
 }
 body.dark-mode main .mainClass .faceClass .personBlock .info .cates {
   color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .faceClass .personBlock .info .cates:first-child:hover {
+  color: white;
 }
 body.dark-mode main .mainClass .faceClass .personBlock .info .date {
   color: rgba(255, 255, 255, 0.2);
