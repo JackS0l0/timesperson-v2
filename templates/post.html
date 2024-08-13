@@ -9,7 +9,7 @@
                         <p>{{object.name}}</p>
                     </div>
                     <div class="info">
-                        <a href="#">{{object.category}}</a>
+                        <a href="{% url 'categoriesDetail' object.category.slug object.category.id %}">{{object.category}}</a>
                         <p class="circle"><i class="bi bi-circle-fill"></i></p>
                         <p>{{object.date|date:"d F, Y"}}</p>
                     </div>

@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="mobClass">
-                {% for post in articles %}
+                {% for post in articles_1 %}
                     <div class="mobpost">
                         <div class="img">
                             <a href="{% url 'articledetail' post.slug post.id %}">
@@ -118,6 +118,23 @@
                     </div>
                 {% endfor %}
             </div>
+            <div class="mobClass">
+                {% for post in articles_412 %}
+                    <div class="mobpost">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                            <p>{{post.date|date:"d F, Y"}}</p>
+                        </div>
+                    </div>
+                    <hr>
+                {% endfor %}
+            </div>
             <div class="lahb">
                 <div class="lastArticlesHeader">
                     <div class="line"></div>
@@ -139,6 +156,23 @@
                             </div>
                         </div>
                     </div>
+                {% endfor %}
+            </div>
+            <div class="mobClass">
+                {% for post in articles_slide3 %}
+                    <div class="mobpost">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                            <p>{{post.date|date:"d F, Y"}}</p>
+                        </div>
+                    </div>
+                    <hr>
                 {% endfor %}
             </div>
             <div class="lahb">
@@ -163,6 +197,23 @@
                             <p class="date">{{post.date|date:"d F, Y"}}</p>
                         </div>
                     </div>
+                {% endfor %}
+            </div>
+            <div class="mobClass">
+                {% for post in articles_face_last2 %}
+                    <div class="mobpost">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                            <p>{{post.date|date:"d F, Y"}}</p>
+                        </div>
+                    </div>
+                    <hr>
                 {% endfor %}
             </div>
             <hr>
@@ -209,6 +260,23 @@
                             </div>
                         </div>
                     </div>
+                {% endfor %}
+            </div>
+            <div class="mobClass">
+                {% for post in articles_1318 %}
+                    <div class="mobpost">
+                        <div class="img">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                            <p>{{post.date|date:"d F, Y"}}</p>
+                        </div>
+                    </div>
+                    <hr>
                 {% endfor %}
             </div>
         </div>
