@@ -95,6 +95,11 @@ body{
     }
     main{
         .mainClass{
+            hr{
+                margin: 2vw 0;
+                opacity: 0.5;
+                border: 0.7px solid black;
+            }
             .postClass{
                 hr{
                     margin: 2vw 0;
@@ -607,6 +612,36 @@ body{
         }
         main{
             .mainClass{
+                .mobClass{
+                    grid-template-columns: 90%;
+                    justify-content: center;
+                    margin: 3vw;
+                    .mobpost{
+                        margin: 3vw 0;
+                        .img{
+                            img{
+                                width: 100%;
+                                height: 40vh;
+                                object-fit: cover;
+                                object-position: top;
+                            }
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 1vw;
+                            a:first-child{
+                                text-decoration: underline;
+                                text-underline-offset: 3px;
+                                color: $grey;
+                            }
+                            p{
+                                text-align: end;
+                                color: $grey;
+                            }
+                        }
+                    }
+                }
                 .postClass{
                     .txtBlock{
                         margin: 3vw 5vw;
