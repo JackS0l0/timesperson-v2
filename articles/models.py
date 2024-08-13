@@ -31,3 +31,26 @@ class Articles(models.Model):
     class Meta:
         verbose_name = 'Məqalə'
         verbose_name_plural = 'Məqalələr'
+class About(models.Model):
+    txt=RichTextField('Haqqımızda')
+    def __str__(self):
+        return self.txt
+    class Meta:
+        verbose_name = 'Haqqımızda'
+        verbose_name_plural = 'Haqqımızda'
+class Contact(models.Model):
+    txt=RichTextField('Əlaqə')
+    def __str__(self):
+        return self.txt
+    class Meta:
+        verbose_name = 'Əlaqə'
+        verbose_name_plural = 'Əlaqə'
+class Partnors(models.Model):
+    name=models.CharField('Ad',max_length=200,unique=True)
+    img=models.URLField('Foto',default='')
+    date=models.DateTimeField('Tarix',default=timezone.now)
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name = 'Partnorlar'
+        verbose_name_plural = 'Partnorlar'
