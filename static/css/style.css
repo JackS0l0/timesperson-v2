@@ -307,6 +307,8 @@ body main .mainClass .editorsClass .editorPosts .info {
 body main .mainClass .editorsClass .editorPosts .info a:first-child {
   color: rgba(30, 30, 30, 0.5);
   margin: 1vw 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 body main .mainClass .editorsClass .editorPosts .info a:first-child:hover {
   color: black;

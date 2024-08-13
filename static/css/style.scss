@@ -326,6 +326,8 @@ body{
                         a:first-child{
                             color: $grey;
                             margin: 1vw 0;
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
                         }
                         a:first-child:hover{
                             color: black;
