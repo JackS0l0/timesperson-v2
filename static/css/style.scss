@@ -71,6 +71,9 @@ body{
                         width: fit-content;
                         min-height: 100vh;
                         .offcanvas-header{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
                             .offcanvas-title{
                                 display: flex;
                                 align-items: center;
@@ -229,7 +232,7 @@ body{
             } 
             hr{
                 margin: 3vw;
-                border: 1px solid black;
+                border: 0.7px solid $grey;
                 opacity: 1;
             }
             .faceClass{
@@ -636,6 +639,9 @@ body.dark-mode{
                     .offcanvas{
                         background-color: #121212;
                         .offcanvas-header{
+                            .btn{
+                                color: white;
+                            }
                             .offcanvas-title{
                                 .btn{
                                     color: white;
@@ -667,6 +673,18 @@ body.dark-mode{
             border: 0.7px solid $grey-darkmode;
         }
         .mainClass{
+            .mobClass{
+                .mobpost{
+                    .info{
+                        a:first-child{
+                            color: $grey-darkmode;
+                        }
+                        p{
+                            color: $grey-darkmode;
+                        }
+                    }
+                }
+            }
             .paginatorClass{
                 nav{
                     .pagination{
@@ -785,6 +803,15 @@ body.dark-mode{
                         .menu{
                             font-size: 6vw;
                         }
+                        .offcanvas{
+                            .offcanvas-body{
+                                .bodyClass{
+                                    .btn{
+                                        font-size: 4vw;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 span:nth-child(2){
@@ -815,11 +842,11 @@ body.dark-mode{
                             a:first-child{
                                 text-decoration: underline;
                                 text-underline-offset: 3px;
-                                color: $grey-darkmode;
+                                color: $grey;
                             }
                             p{
                                 text-align: end;
-                                color: $grey-darkmode;
+                                color: $grey;
                             }
                         }
                     }
@@ -886,9 +913,7 @@ body.dark-mode{
             }
         }
         .btnToTopBlock{
-            #btnToTop{
-                font-size:3vw;
-            }
+            display: none;
         }
     }
 }
