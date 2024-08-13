@@ -1,6 +1,14 @@
 $grey: rgba(30,30,30,0.5);
 $grey-darkmode: rgba(255,255,255,0.2);
 @font-face {
+    font-family: anglecia;
+    src: url(../font/Anglecia-Pro-Display.otf);
+}
+@font-face {
+    font-family: playfair;
+    src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
     font-family: arrus;
     src: url(../font/Arrus.ttf);
 }
@@ -17,6 +25,7 @@ html{
 body{
     font-family: Georgia, serif;
     font-family: arrus;
+    font-family: anglecia;
     p{
         margin: 0;
     }

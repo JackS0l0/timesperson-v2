@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @font-face {
+  font-family: anglecia;
+  src: url(../font/Anglecia-Pro-Display.otf);
+}
+@font-face {
+  font-family: playfair;
+  src: url(../font/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
   font-family: arrus;
   src: url(../font/Arrus.ttf);
 }
@@ -18,6 +26,7 @@ html {
 body {
   font-family: Georgia, serif;
   font-family: arrus;
+  font-family: anglecia;
   font-size: 1.4vw;
 }
 body p {
