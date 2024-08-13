@@ -203,21 +203,29 @@ body{
                 .autor{
                      text-align: start;
                      margin: 2vw 20vw;
-                 }
-                 .shareBlock{
+                }
+                .shareBlock{
                      display: flex;
                      justify-content: center;
                      .links{
-                         a{
+                        a{
                              margin: 0 1vw;
                              font-size: 2vw;
-                         }
-                         button{
+                             color: $grey;
+                        }
+                        a:hover{
+                            color: #000000;
+                        }
+                        button{
                              margin: 0 1vw;
                              font-size: 2vw;
-                         }
-                     }
+                             color: $grey;
+                        }
+                        button:hover{
+                            color: black;
+                        }
                     }
+                }
             } 
             hr{
                 margin: 3vw;
@@ -567,15 +575,9 @@ body{
                         align-items: center;
                         margin-top: 2vw;
                         a{
-                            margin-right: 2vw;
-                            font-size: 2vw;
-                            border: 1px solid white;
-                            padding: 0.5vw 1vw;
-                            border-radius: 100%;
-                        }
-                        img{
-                            height: 2.5vw;
-                            padding-bottom: 5px;
+                            color: white;
+                            font-size: 3vw;
+                            margin-right: 3vw;
                         }
                     }
                 }
@@ -717,6 +719,22 @@ body.dark-mode{
                 hr{
                     border: 0.7px solid $grey-darkmode;
                 }
+                .shareBlock{
+                    .links{
+                        a{
+                            color: $grey-darkmode;
+                        }
+                        a:hover{
+                            color: white;
+                        }
+                        button{
+                            color: $grey-darkmode;
+                        }
+                        button:hover{
+                            color: white;
+                        }
+                    }
+                }
             }
             .lastedClass{
                 .postClass{
@@ -808,6 +826,13 @@ body.dark-mode{
                 }
                 .postClass{
                     margin-top: 20vw;
+                    .shareBlock{
+                        .links{
+                            .btn{
+                                font-size: 5vw;
+                            }
+                        }
+                    }
                     .postHeader{
                         .name{
                             font-size: 4vw;

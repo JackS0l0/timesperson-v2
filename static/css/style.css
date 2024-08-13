@@ -195,10 +195,18 @@ body main .mainClass .postClass .shareBlock {
 body main .mainClass .postClass .shareBlock .links a {
   margin: 0 1vw;
   font-size: 2vw;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .mainClass .postClass .shareBlock .links a:hover {
+  color: #000000;
 }
 body main .mainClass .postClass .shareBlock .links button {
   margin: 0 1vw;
   font-size: 2vw;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .mainClass .postClass .shareBlock .links button:hover {
+  color: black;
 }
 body main .mainClass hr {
   margin: 3vw;
@@ -523,15 +531,9 @@ body footer .footerClass .float1 .box .socialicons {
   margin-top: 2vw;
 }
 body footer .footerClass .float1 .box .socialicons a {
-  margin-right: 2vw;
-  font-size: 2vw;
-  border: 1px solid white;
-  padding: 0.5vw 1vw;
-  border-radius: 100%;
-}
-body footer .footerClass .float1 .box .socialicons img {
-  height: 2.5vw;
-  padding-bottom: 5px;
+  color: white;
+  font-size: 3vw;
+  margin-right: 3vw;
 }
 body footer .footerClass .float1 .info {
   display: flex;
@@ -619,6 +621,18 @@ body.dark-mode main .mainClass .lastArticlesHeader .line::after {
 body.dark-mode main .mainClass .postClass hr {
   border: 0.7px solid rgba(255, 255, 255, 0.2);
 }
+body.dark-mode main .mainClass .postClass .shareBlock .links a {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .postClass .shareBlock .links a:hover {
+  color: white;
+}
+body.dark-mode main .mainClass .postClass .shareBlock .links button {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .postClass .shareBlock .links button:hover {
+  color: white;
+}
 body.dark-mode main .mainClass .lastedClass .postClass .img .info a:first-child {
   color: rgba(255, 255, 255, 0.2);
 }
@@ -682,6 +696,9 @@ body.dark-mode a {
   }
   body main .mainClass .postClass {
     margin-top: 20vw;
+  }
+  body main .mainClass .postClass .shareBlock .links .btn {
+    font-size: 5vw;
   }
   body main .mainClass .postClass .postHeader .name {
     font-size: 4vw;
