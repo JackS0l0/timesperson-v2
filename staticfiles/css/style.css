@@ -721,7 +721,7 @@ body.dark-mode a {
     display: none;
   }
   body main .mainClass .aboutClass {
-    margin: 20vw 3vw 3vw 3vw;
+    margin: 50vw 3vw 3vw 3vw;
   }
   body main .mainClass .mobClass {
     grid-template-columns: 90%;
