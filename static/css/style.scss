@@ -572,6 +572,17 @@ body{
         transform: translateX(5px);
     }
 }
+@media only screen and (min-width: 1000px){
+    body{
+        main{
+            .mainClass{
+                .mobClass{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1000px){
     body{
         font-size: 3vw;
