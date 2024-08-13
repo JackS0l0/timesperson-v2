@@ -720,6 +720,17 @@ body.dark-mode a {
   body header .headerClass span:nth-child(2) {
     display: none;
   }
+  body main .mainClass .partnersClass {
+    grid-template-columns: auto;
+    row-gap: 15vw;
+  }
+  body main .mainClass .partnersClass .partner .img img {
+    width: 40vw;
+    height: 40vw;
+  }
+  body main .mainClass .partnersClass .partner .info {
+    font-size: 5vw;
+  }
   body main .mainClass .aboutClass {
     margin: 50vw 3vw 3vw 3vw;
   }

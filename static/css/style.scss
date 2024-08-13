@@ -860,6 +860,21 @@ body.dark-mode{
         }
         main{
             .mainClass{
+                .partnersClass{
+                    grid-template-columns: auto;
+                    row-gap: 15vw;
+                    .partner{
+                        .img{
+                            img{
+                                width: 40vw;
+                                height: 40vw;
+                            }
+                        }
+                        .info{
+                            font-size: 5vw;
+                        }
+                    }
+                }
                 .aboutClass{
                     margin: 50vw 3vw 3vw 3vw;
                 }
