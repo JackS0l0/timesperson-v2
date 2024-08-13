@@ -295,6 +295,7 @@ body main .mainClass .faceClass .personBlock .info .cates {
   text-underline-offset: 3px;
   font-size: 2vw;
   color: rgba(30, 30, 30, 0.5);
+  text-transform: uppercase;
 }
 body main .mainClass .faceClass .personBlock .info .cates:hover {
   color: #000000;
@@ -347,6 +348,7 @@ body main .mainClass .editorsClass .editorPosts .info a:first-child {
   margin: 1vw 0;
   text-decoration: underline;
   text-underline-offset: 3px;
+  text-transform: uppercase;
 }
 body main .mainClass .editorsClass .editorPosts .info a:first-child:hover {
   color: black;
@@ -395,6 +397,7 @@ body main .mainClass .lastedClass .postClass .info a:first-child {
   text-decoration: underline;
   text-underline-offset: 3px;
   color: rgba(30, 30, 30, 0.5);
+  text-transform: uppercase;
 }
 body main .mainClass .lastedClass .postClass .info a:hover {
   color: #000000;
@@ -654,6 +657,7 @@ body.dark-mode main hr {
 body.dark-mode main .mainClass .mobClass .mobpost .info a:first-child {
   margin: 2vw 0;
   color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
 }
 body.dark-mode main .mainClass .mobClass .mobpost .info p {
   color: rgba(255, 255, 255, 0.2);

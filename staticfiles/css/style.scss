@@ -309,6 +309,7 @@ body{
                             text-underline-offset: 3px;
                             font-size: 2vw;
                             color: $grey;
+                            text-transform: uppercase;
                         }
                         .cates:hover{
                             color: #000000;
@@ -366,6 +367,7 @@ body{
                             margin: 1vw 0;
                             text-decoration: underline;
                             text-underline-offset: 3px;
+                            text-transform: uppercase;
                         }
                         a:first-child:hover{
                             color: black;
@@ -419,6 +421,7 @@ body{
                             text-decoration: underline;
                             text-underline-offset: 3px;
                             color: $grey;
+                            text-transform: uppercase;
                         }
                         a:hover{
                             color: #000000;
@@ -728,6 +731,7 @@ body.dark-mode{
                         a:first-child{
                             margin: 2vw 0;
                             color: $grey-darkmode;
+                            text-transform: uppercase;
                         }
                         p{
                             color: $grey-darkmode;
