@@ -603,6 +603,7 @@ body.dark-mode main hr {
   border: 0.7px solid rgba(255, 255, 255, 0.2);
 }
 body.dark-mode main .mainClass .mobClass .mobpost .info a:first-child {
+  margin: 2vw 0;
   color: rgba(255, 255, 255, 0.2);
 }
 body.dark-mode main .mainClass .mobClass .mobpost .info p {
