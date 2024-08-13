@@ -531,7 +531,7 @@ body .btnToTopBlock #btnToTop {
   bottom: 50%;
   right: -30px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 1.4vw;
   border: none;
   outline: none;
   padding: 10px 30px;
@@ -550,6 +550,57 @@ body .btnToTopBlock #btnToTop i {
 }
 body .btnToTopBlock #btnToTop:hover i {
   transform: translateX(5px);
+}
+
+body.dark-mode {
+  background: #121212;
+  color: white;
+}
+body.dark-mode header .headerClass span .menuClass .offcanvas {
+  background-color: #121212;
+}
+body.dark-mode header .headerClass span .menuClass .offcanvas .offcanvas-header .offcanvas-title .btn {
+  color: white;
+}
+body.dark-mode header .headerClass span .menuClass .offcanvas .offcanvas-header .offcanvas-title .langClass .dropdown .dropdown-menu {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #121212;
+}
+body.dark-mode header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a:hover {
+  color: white;
+}
+body.dark-mode main hr {
+  border: 0.7px solid rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .editorsClass .editorPosts .img .info a:first-child {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .editorsClass .editorPosts .img .info p {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .faceClass .personBlock .info .cates {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .faceClass .personBlock .info .date {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .lastArticlesHeader .line::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .postClass hr {
+  border: 0.7px solid rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .lastedClass .postClass .img .info a:first-child {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .lastedClass .postClass .img .info a:hover {
+  color: white;
+}
+body.dark-mode main .mainClass .lastedClass .postClass .img .info p {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode a {
+  color: white;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -594,14 +645,26 @@ body .btnToTopBlock #btnToTop:hover i {
   body main .mainClass .mobClass .mobpost .info a:first-child {
     text-decoration: underline;
     text-underline-offset: 3px;
-    color: rgba(30, 30, 30, 0.5);
+    color: rgba(255, 255, 255, 0.2);
   }
   body main .mainClass .mobClass .mobpost .info p {
     text-align: end;
-    color: rgba(30, 30, 30, 0.5);
+    color: rgba(255, 255, 255, 0.2);
   }
   body main .mainClass .postClass {
     margin-top: 20vw;
+  }
+  body main .mainClass .postClass .postHeader .name {
+    font-size: 4vw;
+  }
+  body main .mainClass .postClass .postHeader .info .circle {
+    font-size: 1vw;
+  }
+  body main .mainClass .postClass .postHeader .info a {
+    font-size: 3vw;
+  }
+  body main .mainClass .postClass .postHeader .info p {
+    font-size: 3vw;
   }
   body main .mainClass .postClass .txtBlock {
     margin: 3vw 5vw;
@@ -623,5 +686,8 @@ body .btnToTopBlock #btnToTop:hover i {
   }
   body main .mainClass .welcomeCarusel .div .carousel-inner .carousel-item div a {
     font-size: 9vw !important;
+  }
+  body .btnToTopBlock #btnToTop {
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=style.css.map */

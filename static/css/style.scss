@@ -1,4 +1,5 @@
 $grey: rgba(30,30,30,0.5);
+$grey-darkmode: rgba(255,255,255,0.2);
 @font-face {
     font-family: arrus;
     src: url(../font/Arrus.ttf);
@@ -572,7 +573,7 @@ body{
             bottom: 50%;
             right: -30px;
             z-index: 99;
-            font-size: 18px;
+            font-size: 1.4vw;
             border: none;
             outline: none;
             padding: 10px 30px;
@@ -593,6 +594,106 @@ body{
     }
     .btnToTopBlock #btnToTop:hover i {
         transform: translateX(5px);
+    }
+}
+body.dark-mode{
+    background: #121212;
+    color: white;
+    header{
+        .headerClass{
+            span{
+                .menuClass{
+                    .offcanvas{
+                        background-color: #121212;
+                        .offcanvas-header{
+                            .offcanvas-title{
+                                .btn{
+                                    color: white;
+                                }
+                                .langClass{
+                                    .dropdown{
+                                        .dropdown-menu{
+                                            border: 1px solid $grey-darkmode;
+                                            background-color: #121212;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .offcanvas-body{
+                            .bodyClass{
+                                a:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        hr{
+            border: 0.7px solid $grey-darkmode;
+        }
+        .mainClass{
+            .editorsClass{
+                .editorPosts{
+                    .img{
+                        .info{
+                            a:first-child{
+                                color: $grey-darkmode;
+                            }
+                            p{
+                                color: $grey-darkmode;
+                            }
+                        }
+                    }
+                }
+            }
+            .faceClass{
+                .personBlock{
+                    .info{
+                        .cates{
+                            color: $grey-darkmode;
+                        }
+                        .date{
+                            color: $grey-darkmode;
+                        }
+                    }
+                }
+            }
+            .lastArticlesHeader{
+                .line::after{
+                    background: $grey-darkmode;
+                }
+            }
+            .postClass{
+                hr{
+                    border: 0.7px solid $grey-darkmode;
+                }
+            }
+            .lastedClass{
+                .postClass{
+                    .img{
+                        .info{
+                            a:first-child{
+                                color: $grey-darkmode;
+                            }
+                            a:hover{
+                                color: white;
+                            }
+                            p{
+                                color: $grey-darkmode;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    a{
+        color: white;
     }
 }
 @media only screen and (min-width: 1000px){
@@ -651,17 +752,33 @@ body{
                             a:first-child{
                                 text-decoration: underline;
                                 text-underline-offset: 3px;
-                                color: $grey;
+                                color: $grey-darkmode;
                             }
                             p{
                                 text-align: end;
-                                color: $grey;
+                                color: $grey-darkmode;
                             }
                         }
                     }
                 }
                 .postClass{
                     margin-top: 20vw;
+                    .postHeader{
+                        .name{
+                            font-size: 4vw;
+                        }
+                        .info{
+                            .circle{
+                                font-size: 1vw;
+                            }
+                            a{
+                                font-size: 3vw;
+                            }
+                            p{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
                     .txtBlock{
                         margin: 3vw 5vw;
                     }
@@ -696,6 +813,11 @@ body{
                         }
                     }
                 }
+            }
+        }
+        .btnToTopBlock{
+            #btnToTop{
+                font-size:3vw;
             }
         }
     }

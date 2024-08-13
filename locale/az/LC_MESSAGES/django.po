@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 05:43+0400\n"
+"POT-Creation-Date: 2024-08-13 18:08+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: .\app\settings.py:77
 msgid "English"
 msgstr ""
@@ -27,4 +28,36 @@ msgstr ""
 
 #: .\app\settings.py:79
 msgid "Russian"
+msgstr ""
+
+#: .\templates\index.html:37
+msgid "LATEST"
+msgstr "SON PAYLAŞIMLAR"
+
+#: .\templates\index.html:100
+msgid "Business"
+msgstr "BİZNES"
+
+#: .\templates\index.html:123
+msgid "EDITOR'S PICKS"
+msgstr "sEÇİLMİŞ MƏQALƏLƏR"
+
+#: .\templates\index.html:146
+msgid "FACES"
+msgstr "SİMALAR"
+
+#: .\templates\index.html:193
+msgid "Events"
+msgstr "HADİSƏLƏR"
+
+#: .\templates\post.html:50
+msgid "Written by"
+msgstr "Müəllif"
+
+#: .\templates\post.html:70
+msgid "URL copied to clipboard!"
+msgstr ""
+
+#: .\templates\post.html:72
+msgid "Failed to copy URL:"
 msgstr ""
