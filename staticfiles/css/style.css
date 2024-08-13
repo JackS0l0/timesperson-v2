@@ -542,6 +542,9 @@ body .btnToTopBlock #btnToTop:hover i {
   body header .headerClass span:nth-child(2) {
     display: none;
   }
+  body main .mainClass .postClass .txtBlock {
+    width: 3vw 5vw;
+  }
   body main .mainClass .coverClass {
     display: none;
   }
