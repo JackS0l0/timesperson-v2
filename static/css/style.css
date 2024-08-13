@@ -559,7 +559,7 @@ body .btnToTopBlock #btnToTop:hover i {
 }
 @media only screen and (max-width: 1000px) {
   body {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   body header .headerClass span .logo img {
     width: 30vw;
@@ -576,7 +576,7 @@ body .btnToTopBlock #btnToTop:hover i {
     margin: 3vw;
   }
   body main .mainClass .mobClass .mobpost {
-    margin: 3vw 0;
+    margin: 10vw 0;
   }
   body main .mainClass .mobClass .mobpost .img img {
     width: 100%;
@@ -599,6 +599,9 @@ body .btnToTopBlock #btnToTop:hover i {
   body main .mainClass .mobClass .mobpost .info p {
     text-align: end;
     color: rgba(30, 30, 30, 0.5);
+  }
+  body main .mainClass .postClass {
+    margin-top: 20vw;
   }
   body main .mainClass .postClass .txtBlock {
     margin: 3vw 5vw;

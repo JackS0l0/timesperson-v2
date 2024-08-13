@@ -608,7 +608,7 @@ body{
 }
 @media only screen and (max-width: 1000px){
     body{
-        font-size: 3vw;
+        font-size: 4vw;
         header{
             .headerClass{
                 span{
@@ -635,7 +635,7 @@ body{
                     justify-content: center;
                     margin: 3vw;
                     .mobpost{
-                        margin: 3vw 0;
+                        margin: 10vw 0;
                         .img{
                             img{
                                 width: 100%;
@@ -661,6 +661,7 @@ body{
                     }
                 }
                 .postClass{
+                    margin-top: 20vw;
                     .txtBlock{
                         margin: 3vw 5vw;
                     }
