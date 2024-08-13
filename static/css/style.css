@@ -543,7 +543,7 @@ body .btnToTopBlock #btnToTop:hover i {
     display: none;
   }
   body main .mainClass .postClass .txtBlock {
-    width: 3vw 5vw;
+    margin: 3vw 5vw;
   }
   body main .mainClass .coverClass {
     display: none;
