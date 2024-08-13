@@ -102,6 +102,10 @@ body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a
 body main .mainClass {
   min-height: 50vh;
 }
+body main .mainClass .paginatorClass nav .pagination .page-item a {
+  background: none;
+  color: black;
+}
 body main .mainClass .listClass {
   margin-top: 15vh;
 }
@@ -587,6 +591,9 @@ body.dark-mode header .headerClass span .menuClass .offcanvas .offcanvas-body .b
 }
 body.dark-mode main hr {
   border: 0.7px solid rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .paginatorClass nav .pagination .page-item a {
+  color: white;
 }
 body.dark-mode main .mainClass .editorsClass .editorPosts .img .info a:first-child {
   color: rgba(255, 255, 255, 0.2);

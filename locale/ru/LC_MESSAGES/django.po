@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 18:08+0400\n"
+"POT-Creation-Date: 2024-08-13 19:30+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,22 @@ msgstr ""
 
 #: .\app\settings.py:79
 msgid "Russian"
+msgstr ""
+
+#: .\templates\category.html:52
+msgid "First"
+msgstr ""
+
+#: .\templates\category.html:55 .\templates\category.html:62
+msgid "Previous"
+msgstr ""
+
+#: .\templates\category.html:74 .\templates\category.html:81
+msgid "Next"
+msgstr ""
+
+#: .\templates\category.html:77
+msgid "Last"
 msgstr ""
 
 #: .\templates\index.html:37

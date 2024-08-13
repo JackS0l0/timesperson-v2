@@ -108,6 +108,18 @@ body{
     }
     main{
         .mainClass{
+            .paginatorClass{
+                nav{
+                    .pagination{
+                        .page-item{
+                            a{
+                                background: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
             .listClass{
                 margin-top: 15vh;
             }
@@ -653,6 +665,17 @@ body.dark-mode{
             border: 0.7px solid $grey-darkmode;
         }
         .mainClass{
+            .paginatorClass{
+                nav{
+                    .pagination{
+                        .page-item{
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
             .editorsClass{
                 .editorPosts{
                     .img{
