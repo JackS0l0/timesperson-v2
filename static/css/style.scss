@@ -120,6 +120,17 @@ body{
     }
     main{
         .mainClass{
+            .searchClass{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+                .input-group{
+                    width: 50%;
+                }
+            }
             .partnersClass{
                 margin: 10vw 20vw 5vw 20vw;
                 display: grid;

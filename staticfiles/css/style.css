@@ -116,6 +116,17 @@ body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a
 body main .mainClass {
   min-height: 50vh;
 }
+body main .mainClass .searchClass {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+body main .mainClass .searchClass .input-group {
+  width: 50%;
+}
 body main .mainClass .partnersClass {
   margin: 10vw 20vw 5vw 20vw;
   display: grid;

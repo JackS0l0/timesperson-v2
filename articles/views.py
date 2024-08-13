@@ -58,3 +58,10 @@ def partnors(request):
         'categories_navbar':Categories.objects.filter(navbar=True).order_by('-date')
     }
     return render(request,'partnors.html',data)
+def search(request):
+    data={
+        'title':"Time's Person - Partners",
+        'categories' : Categories.objects.all().order_by('-date'),
+        'categories_navbar':Categories.objects.filter(navbar=True).order_by('-date')
+    }
+    return render(request,'search.html',data)
