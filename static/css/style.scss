@@ -129,6 +129,102 @@ body{
     }
     main{
         .mainClass{
+            .lifestyleClass{
+                margin: 3vw;
+                display: flex;
+                .bigPost{
+                    width: 50vw;
+                    margin-right: 2vw;
+                    .img{
+                        a{
+                            img{
+                                width: 50vw;
+                            }
+                        }
+                    }
+                    .info{
+                        display: flex;
+                        flex-direction: column;
+                        a:first-child{
+                            color: $grey;
+                            text-decoration: underline;
+                            margin: 0.5vw 0;
+                            text-transform: uppercase;
+                            text-underline-offset: 3px;
+                        }
+                        a:first-child:hover{
+                            color: black;
+                        }
+                        a{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -moz-box;
+                            -moz-box-orient: vertical;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            line-clamp: 2;
+                            box-orient: vertical;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                            text-underline-offset: 3px;
+                        }
+                        p{
+                            text-align: end;
+                        }
+                    }
+                }
+                .rightSide{
+                    display: grid;
+                    grid-template-columns: auto;
+                    align-content: space-between;
+                    .smallPost{
+                        display: flex;
+                        width: fit-content;
+                        .img{
+                            margin-right: 1vw;
+                            a{
+                                img{
+                                    width: 20vw;
+                                }
+                            }
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            a{
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -moz-box;
+                                -moz-box-orient: vertical;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                line-clamp: 3;
+                                box-orient: vertical;
+                            }
+                            a:first-child{
+                                color: $grey;
+                                text-decoration: underline;
+                                margin: 0.5vw 0;
+                                text-transform: uppercase;
+                                text-underline-offset: 3px;
+                            }
+                            a:first-child:hover{
+                                color: black;
+                            }
+                            a:hover{
+                                text-decoration: underline;
+                                text-underline-offset: 3px;
+                            }
+                            p{
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+            }
             .searchClass{
                 display: flex;
                 justify-content: center;
@@ -213,7 +309,8 @@ body{
                 hr{
                     margin: 2vw 0;
                     opacity: 0.5;
-                    border: 0.7px solid black;
+                    border: 0.7px solid $grey;
+                    margin: 0 19vw;
                 }
                 .postHeader{
                      display: flex;
@@ -495,7 +592,7 @@ body{
                     .line::after{
                         display:inline-block;
                         width:  100%;
-                        content:".";
+                        content:",";
                         font-size:0;
                         color:transparent;
                         height:0.5px;
@@ -716,6 +813,7 @@ body.dark-mode{
     color: white;
     header{
         .headerClass{
+            border-bottom: 1px solid white;
             span{
                 .menuClass{
                     .offcanvas{
@@ -755,6 +853,28 @@ body.dark-mode{
             border: 0.7px solid $grey-darkmode;
         }
         .mainClass{
+            .lifestyleClass{
+                .bigPost{
+                    .info{
+                        a:first-child{
+                            color: $grey-darkmode;
+                        }
+                        a:first-child:hover{
+                            color: white;
+                        }
+                    }
+                }
+                .smallPost{
+                    .info{
+                        a:first-child{
+                            color: $grey-darkmode;
+                        }
+                        a:first-child:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
             .searchres{
                 a{
                     color: $grey-darkmode;
@@ -913,6 +1033,9 @@ body.dark-mode{
         }
         main{
             .mainClass{
+                .lifestyleClass{
+                    display: none;
+                }
                 .partnersClass{
                     grid-template-columns: auto;
                     row-gap: 15vw;
