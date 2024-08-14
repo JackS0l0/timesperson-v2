@@ -23,3 +23,17 @@ document.getElementById('theme-toggle-button').addEventListener('click', functio
         localStorage.setItem('theme', 'light');
     }
 });
+// header fixed
+function changeHeaderPosition() {
+    const header = document.querySelector('.headerClass');
+    const triggerHeight = window.innerHeight / 2;
+
+    if (window.scrollY > triggerHeight) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+}
+
+// Add event listener for scroll event
+window.addEventListener('scroll', changeHeaderPosition);

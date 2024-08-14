@@ -1,5 +1,8 @@
 from modeltranslation.translator import TranslationOptions,register
-from .models import Articles,Categories,Contact,About
+from .models import Articles,Categories,Contact,About,AboutinFooter
+@register(AboutinFooter)
+class AboutinFooterTranslationOptions(TranslationOptions):
+    fields = ['txt']
 @register(About)
 class AboutTranslationOptions(TranslationOptions):
     fields = ['txt']

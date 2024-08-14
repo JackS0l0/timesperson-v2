@@ -13,10 +13,10 @@
                     <div class="carousel-inner">
                         {% for post in articles_slide2 %}
                             <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
-                                <img src="{{post.img}}" class="d-block w-100" alt="{{post.name}}" style="filter: brightness(50%); height: 100vh; object-fit: cover; object-position: top;">
+                                <img src="{{post.img}}" class="d-block w-100" alt="{{post.name}}" style=" height: 90vh; object-fit: cover; object-position: top;">
                                 <div class="carousel-caption d-md-block" style="bottom: 40%;">
-                                    <h5 ><a href="{% url 'categoriesDetail' post.category.slug post.category.id %}" style="color: white;">{{post.category}}</a></h5>
-                                    <a href="{% url 'articledetail' post.slug post.id %}" style="color: white;">{{post.name}}</a>
+                                    <!-- <h5 ><a href="{% url 'categoriesDetail' post.category.slug post.category.id %}" style="color: white;">{{post.category}}</a></h5>
+                                    <a href="{% url 'articledetail' post.slug post.id %}" style="color: white;">{{post.name}}</a> -->
                                 </div>
                             </div>
                         {% endfor %}

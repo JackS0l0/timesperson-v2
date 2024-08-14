@@ -54,3 +54,10 @@ class Partnors(models.Model):
     class Meta:
         verbose_name = 'Partnorlar'
         verbose_name_plural = 'Partnorlar'
+class AboutinFooter(models.Model):
+    txt=RichTextField('Sonluq')
+    def __str__(self):
+        return self.txt
+    class Meta:
+        verbose_name = 'Sonluq'
+        verbose_name_plural = 'Sonluq'

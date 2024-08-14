@@ -1,7 +1,20 @@
 from django.contrib import admin
-from .models import Categories, Articles,About,Contact,Partnors
+from .models import Categories, Articles,About,Contact,Partnors,AboutinFooter
 from modeltranslation.admin import TranslationAdmin
 admin.site.register(Partnors)
+@admin.register(AboutinFooter)
+class AboutinFooterAdmin(TranslationAdmin):
+    group_fieldsets = True  
+    list_display = ['txt']
+    class Media:
+        js = (
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
+            'modeltranslation/js/tabbed_translation_fields.js',
+        )
+        css = {
+            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
+        }
 @admin.register(Contact)
 class ContactAdmin(TranslationAdmin):
     group_fieldsets = True  

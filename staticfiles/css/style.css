@@ -40,18 +40,13 @@ body header .headerClass {
   padding: 1vw 3vw;
   top: 0;
   width: 100%;
-  position: fixed;
   z-index: 9999;
   background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
-  background: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4.7px);
-  -webkit-backdrop-filter: blur(4.7px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  transition: top 0.5s ease-in-out;
 }
 body header .headerClass span:nth-child(2) a {
   background-image: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 50%);
@@ -112,6 +107,19 @@ body header .headerClass span .menuClass .offcanvas .offcanvas-body .bodyClass a
   color: black;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+body header .headerClass.fixed {
+  position: fixed;
+  top: 0;
+  animation: slideDown 0.7s ease-in-out forwards;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 body main .mainClass {
   min-height: 50vh;
@@ -178,7 +186,7 @@ body main .mainClass .paginatorClass nav .pagination .page-item a {
   color: black;
 }
 body main .mainClass .listClass {
-  margin-top: 15vh;
+  margin-top: 2vh;
 }
 body main .mainClass hr {
   margin: 2vw 0;
@@ -194,7 +202,7 @@ body main .mainClass .postClass .postHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vw 20vw;
+  margin: 2vw 20vw;
 }
 body main .mainClass .postClass .postHeader .name {
   text-align: center;
