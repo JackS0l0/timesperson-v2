@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 19:30+0400\n"
+"POT-Creation-Date: 2024-08-14 10:42+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,19 +50,19 @@ msgstr ""
 msgid "LATEST"
 msgstr ""
 
-#: .\templates\index.html:100
+#: .\templates\index.html:101
 msgid "Business"
 msgstr ""
 
-#: .\templates\index.html:123
+#: .\templates\index.html:141
 msgid "EDITOR'S PICKS"
 msgstr ""
 
-#: .\templates\index.html:146
+#: .\templates\index.html:181
 msgid "FACES"
 msgstr ""
 
-#: .\templates\index.html:193
+#: .\templates\index.html:245
 msgid "Events"
 msgstr ""
 
@@ -76,4 +76,8 @@ msgstr ""
 
 #: .\templates\post.html:72
 msgid "Failed to copy URL:"
+msgstr ""
+
+#: .\templates\search.html:13
+msgid "Search"
 msgstr ""

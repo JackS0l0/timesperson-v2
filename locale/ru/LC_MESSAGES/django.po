@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 19:30+0400\n"
+"POT-Creation-Date: 2024-08-14 10:42+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,37 +34,37 @@ msgstr ""
 
 #: .\templates\category.html:52
 msgid "First"
-msgstr ""
+msgstr "Первый"
 
 #: .\templates\category.html:55 .\templates\category.html:62
 msgid "Previous"
-msgstr ""
+msgstr "Предыдущий"
 
 #: .\templates\category.html:74 .\templates\category.html:81
 msgid "Next"
-msgstr ""
+msgstr "Следующий"
 
 #: .\templates\category.html:77
 msgid "Last"
-msgstr ""
+msgstr "Последний"
 
 #: .\templates\index.html:37
 msgid "LATEST"
 msgstr "ПОСЛЕДНИЕ"
 
-#: .\templates\index.html:100
+#: .\templates\index.html:101
 msgid "Business"
 msgstr "Бизнес"
 
-#: .\templates\index.html:123
+#: .\templates\index.html:141
 msgid "EDITOR'S PICKS"
 msgstr "ВЫБОР РЕДАКТОРА"
 
-#: .\templates\index.html:146
+#: .\templates\index.html:181
 msgid "FACES"
 msgstr "ЛИЦА"
 
-#: .\templates\index.html:193
+#: .\templates\index.html:245
 msgid "Events"
 msgstr "События"
 
@@ -79,3 +79,7 @@ msgstr ""
 #: .\templates\post.html:72
 msgid "Failed to copy URL:"
 msgstr ""
+
+#: .\templates\search.html:13
+msgid "Search"
+msgstr "Поиск"

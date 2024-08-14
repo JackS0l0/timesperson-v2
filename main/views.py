@@ -2,6 +2,7 @@ from django.shortcuts import render
 from articles.models import Categories,Articles
 from urllib.parse import urlparse
 from django.conf import settings
+from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
@@ -41,3 +42,16 @@ def index(request):
         'articles_face_last2': Articles.objects.filter(Q(category__name='Faces') | Q(category__name='Лица') | Q(category__name='Simalar')).order_by('-date')[0:2],
     }
     return render(request,'index.html',data)
+class SearchForm(ListView):
+    model = Articles
+    context_object_name = 'articles'
+    template_name = 'search.html'
+    def get_context_data(self, **kwargs):
+        context=super(SearchForm, self).get_context_data(**kwargs)
+        query = self.request.GET.get('q')
+        if query:
+            context['title'] = 'Axtarış nəticəsi'
+            context['articles'] = Articles.objects.filter(Q(name__icontains=query))
+            context['categories'] = Categories.objects.all().order_by('-date')
+            context['categories_navbar']=Categories.objects.filter(navbar=True).order_by('-date')
+            return context

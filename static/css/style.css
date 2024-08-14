@@ -122,10 +122,29 @@ body main .mainClass .searchClass {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  margin: 15vh 0 10vh 0;
 }
-body main .mainClass .searchClass .input-group {
+body main .mainClass .searchClass .input-group form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body main .mainClass .searchClass .input-group form .input-group {
   width: 50%;
+}
+body main .mainClass .searchres {
+  margin: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+body main .mainClass .searchres a {
+  margin: 0.5vw 0;
+  color: rgba(30, 30, 30, 0.5);
+}
+body main .mainClass .searchres a:hover {
+  text-decoration: underline;
+  color: #000000;
+  text-underline-offset: 3px;
 }
 body main .mainClass .partnersClass {
   margin: 10vw 20vw 5vw 20vw;
@@ -653,6 +672,12 @@ body.dark-mode header .headerClass span .menuClass .offcanvas .offcanvas-body .b
 }
 body.dark-mode main hr {
   border: 0.7px solid rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .searchres a {
+  color: rgba(255, 255, 255, 0.2);
+}
+body.dark-mode main .mainClass .searchres a:hover {
+  color: white;
 }
 body.dark-mode main .mainClass .mobClass .mobpost .info a:first-child {
   margin: 2vw 0;

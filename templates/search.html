@@ -4,10 +4,19 @@
     <main>
         <div class="mainClass">
             <div class="searchClass">
-                <div class="input-group mb-3">
-                    <button class="btn" type="button" id="button-addon1"><i class="bi bi-search"></i></button>
-                    <input type="text" class="form-control" placeholder="Search.." aria-label="" aria-describedby="button-addon1">
+                <div class="serachBlock input-group">
+                    <form method="GET" action="{% url 'searchpage' %}">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control"  name="q" placeholder="{% trans 'Search' %}..." aria-label="{% trans 'Search' %}..." aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="bi bi-search"></i></button>
+                        </div>
+                    </form>
                 </div>
+            </div>
+            <div class="searchres">
+                {% for post in articles %}
+                    <a href="#">{{post.name}}</a>
+                {% endfor %}
             </div>
         </div>
     </main>

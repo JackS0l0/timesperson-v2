@@ -60,7 +60,8 @@ def partnors(request):
     return render(request,'partnors.html',data)
 def search(request):
     data={
-        'title':"Time's Person - Partners",
+        'title':"Time's Person - Search",
+        'articles':Articles.objects.all().order_by('-date'),
         'categories' : Categories.objects.all().order_by('-date'),
         'categories_navbar':Categories.objects.filter(navbar=True).order_by('-date')
     }
