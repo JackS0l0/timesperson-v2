@@ -9,7 +9,7 @@ from django.conf.urls.i18n import i18n_patterns
 urlpatterns = [
     re_path(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
-    path('admin/', admin.site.urls),
+    path('changemyplane/', admin.site.urls),
     path('',mainviews.index,name='homepage'),
     path('articles/<slug:slug>/<int:pk>/',articlesviews.ArticleDetail.as_view(),name='articledetail'),
     path('category/<slug:slug>/<int:category_id>/',articlesviews.CategoriesDetail.as_view(),name='categoriesDetail'),

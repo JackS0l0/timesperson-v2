@@ -279,6 +279,45 @@
                     <hr>
                 {% endfor %}
             </div>
+            <div class="lahb">
+                <div class="lastArticlesHeader">
+                    <div class="line"></div>
+                        <p>{% trans 'Life Style' %}</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="lifestyleClass">
+                {% for post in articles_lifestyle_big %}
+                    <div class="bigPost">
+                        <div class="img">
+                            <a href="#">
+                                <img src="{{post.img}}" alt="{{post.name}}">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a href="#">{{post.category}}</a>
+                            <a href="#">{{post.name}}</a>
+                            <p>{{post.date|date:"d F, Y"}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="rightSide">
+                    {% for post in articles_lifestyle_small %}
+                        <div class="smallPost">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="{{post.img}}" alt="{{post.name}}">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <a href="#">{{post.category}}</a>
+                                <a href="#">{{post.name}}</a>
+                                <p>{{post.date|date:"d F, Y"}}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </main>
 {% endblock %}
