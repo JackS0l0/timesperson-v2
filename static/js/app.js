@@ -37,3 +37,11 @@ function changeHeaderPosition() {
 
 // Add event listener for scroll event
 window.addEventListener('scroll', changeHeaderPosition);
+// page loading
+window.addEventListener('load', function() {
+    const loading = document.getElementById('loading');
+    loading.style.opacity = '0'; // Start the fade-out animation
+    setTimeout(() => {
+        loading.style.display = 'none'; // Hide the loading screen after the transition
+    }, 1000); // Wait for the transition duration
+});
