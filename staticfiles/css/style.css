@@ -870,6 +870,9 @@ body.dark-mode a {
 }
 
 @media only screen and (min-width: 1000px) {
+  body main .mainClass .welcomeCaruselmob {
+    display: none;
+  }
   body main .mainClass .mobClass {
     display: none;
   }
@@ -888,6 +891,9 @@ body.dark-mode a {
     font-size: 4vw;
   }
   body header .headerClass span:nth-child(2) {
+    display: none;
+  }
+  body main .mainClass .welcomeCarusel {
     display: none;
   }
   body main .mainClass .lifestyleClass {

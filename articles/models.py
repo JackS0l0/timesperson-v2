@@ -18,6 +18,7 @@ class Articles(models.Model):
     img=models.URLField('Foto')
     img2=models.URLField('Foto iç şəkil',default='',null=True,blank=True)
     img3=models.URLField('Events üçün şəkil',default='',null=True,blank=True)
+    img4=models.URLField('Cover Karusel üçün şəkil - mobil',default='',null=True,blank=True)
     video=models.CharField('Video',max_length=1000,null=True,blank=True,default='')
     txt=RichTextField('Məzmun', default='',null=True,blank=True)
     txt_desc=models.TextField('Qısa məzmun',default='', null=True,blank=True)
