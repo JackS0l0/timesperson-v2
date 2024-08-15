@@ -49,6 +49,10 @@ def index(request):
         'articles_lifestyle_small': Articles.objects.filter(
             Q(category__name='Lifestyle') | Q(category__name='Стиль Жизни') | Q(category__name='Həyat Tərzi') | Q(category__name='Health & Beauty') | Q(category__name='Здоровье и Красота') | Q(category__name='Sağlamlıq və Gözəllik') | Q(category__name='Mədəniyyət') | Q(category__name='Culture') | Q(category__name='Культура') | Q(category__name='İdman') | Q(category__name='Sport') | Q(category__name='Спорт') | Q(category__name='Səyahət') | Q(category__name='Travel') | Q(category__name='Путешествие')
             ).order_by('-date')[1:4],
+
+        'articles_lifestyle_mob': Articles.objects.filter(
+            Q(category__name='Lifestyle') | Q(category__name='Стиль Жизни') | Q(category__name='Həyat Tərzi') | Q(category__name='Health & Beauty') | Q(category__name='Здоровье и Красота') | Q(category__name='Sağlamlıq və Gözəllik') | Q(category__name='Mədəniyyət') | Q(category__name='Culture') | Q(category__name='Культура') | Q(category__name='İdman') | Q(category__name='Sport') | Q(category__name='Спорт') | Q(category__name='Səyahət') | Q(category__name='Travel') | Q(category__name='Путешествие')
+            ).order_by('-date')[0:3],
     }
     return render(request,'index.html',data)
 class SearchForm(ListView):

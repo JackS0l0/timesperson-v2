@@ -15,7 +15,7 @@
             </div>
             <div class="searchres">
                 {% for post in articles %}
-                    <a href="#">{{post.name}}</a>
+                    <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
                 {% endfor %}
             </div>
         </div>
