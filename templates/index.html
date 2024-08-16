@@ -13,7 +13,9 @@
                     <div class="carousel-inner">
                         {% for post in articles_slide2 %}
                             <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
-                                <img src="{{post.img}}" class="d-block w-100" alt="{{post.name}}" style=" height: 90vh; object-fit: cover; object-position: top;">
+                                <a href="{% url 'articledetail' post.slug post.id %}">
+                                    <img src="{{post.img}}" class="d-block w-100" alt="{{post.name}}" style=" height: 90vh; object-fit: cover; object-position: top;">
+                                </a>
                             </div>
                         {% endfor %}
                     </div>
@@ -37,7 +39,7 @@
                     <div class="carousel-inner">
                         {% for post in articles_slide2 %}
                             <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="3000">
-                                <img src="{{post.img4}}" class="d-block w-100" alt="{{post.name}}" style=" height: 90vh; object-fit: cover; object-position: top;">
+                                <a href="{% url 'articledetail' post.slug post.id %}"><img src="{{post.img4}}" class="d-block w-100" alt="{{post.name}}" style=" height: 90vh; object-fit: cover; object-position: top;"></a>
                             </div>
                         {% endfor %}
                     </div>
@@ -166,12 +168,12 @@
                 {% for post in articles_slide3 %}
                     <div class="editorPosts">
                         <div class="img">
-                            <a href="#">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
                                 <img src="{{post.img}}" alt="foto">
                             </a>
                             <div class="info">
                                 <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
-                                <a href="#">{{post.name}}</a>
+                                <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
                                 <p>{{post.date|date:"d F, Y"}}</p>
                             </div>
                         </div>
@@ -310,13 +312,13 @@
                 {% for post in articles_lifestyle_big %}
                     <div class="bigPost">
                         <div class="img">
-                            <a href="#">
+                            <a href="{% url 'articledetail' post.slug post.id %}">
                                 <img src="{{post.img}}" alt="{{post.name}}">
                             </a>
                         </div>
                         <div class="info">
-                            <a href="#">{{post.category}}</a>
-                            <a href="#">{{post.name}}</a>
+                            <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
                             <p>{{post.date|date:"d F, Y"}}</p>
                         </div>
                     </div>
@@ -325,13 +327,13 @@
                     {% for post in articles_lifestyle_mob %}
                         <div class="smallPost">
                             <div class="img">
-                                <a href="#">
+                                <a href="{% url 'articledetail' post.slug post.id %}">
                                     <img src="{{post.img}}" alt="{{post.name}}">
                                 </a>
                             </div>
                             <div class="info">
-                                <a href="#">{{post.category}}</a>
-                                <a href="#">{{post.name}}</a>
+                                <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                                <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
                                 <p>{{post.date|date:"d F, Y"}}</p>
                             </div>
                         </div>

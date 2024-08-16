@@ -39,6 +39,9 @@ html .spinner {
   width: -moz-fit-content;
   width: fit-content;
 }
+html .spinner img {
+  width: 60vw;
+}
 
 body {
   font-family: Georgia, serif;
@@ -309,7 +312,7 @@ body main .mainClass .postClass .postHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2vw 20vw;
+  margin: 2vw 19vw;
 }
 body main .mainClass .postClass .postHeader .name {
   text-align: center;
@@ -917,6 +920,9 @@ body.dark-mode a {
     grid-template-columns: 90%;
     justify-content: center;
     margin: 3vw;
+  }
+  body main .mainClass .mobClass hr:last-child {
+    display: none;
   }
   body main .mainClass .mobClass .mobpost {
     margin: 10vw 0;

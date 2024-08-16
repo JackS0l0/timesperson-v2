@@ -21,7 +21,7 @@ html{
     max-width: 1920px;
     margin: auto;
     height: 100px;
-    #loading {
+    #loading{
         position: fixed;
         width: 100%;
         height: 100%;
@@ -36,6 +36,9 @@ html{
     }
     .spinner {
         width: fit-content;
+        img{
+            width: 60vw;
+        }
     }
 }
 body{
@@ -332,7 +335,7 @@ body{
                      display: flex;
                      flex-direction: column;
                      align-items: center;
-                     margin: 2vw 20vw;
+                     margin: 2vw 19vw;
                      .name{
                          text-align: center;
                          font-size: 2.5vw;
@@ -1080,6 +1083,9 @@ body.dark-mode{
                     grid-template-columns: 90%;
                     justify-content: center;
                     margin: 3vw;
+                    hr:last-child{
+                        display: none;
+                    }
                     .mobpost{
                         margin: 10vw 0;
                         .img{

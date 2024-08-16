@@ -58,10 +58,54 @@
                             var hv = "https://www.facebook.com/sharer/sharer.php?u=" + cu;
                             document.getElementById('fshare').href = hv;
                         </script>
-
-                        <a href="#" class="btn" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#" class="btn" target="_blank"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn" id="whatsapp-share-link" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <script>
+                            document.getElementById('whatsapp-share-link').addEventListener('click', function(event) {
+                            event.preventDefault();
+                                var domain = "https://timesperson.com";
+                                var relativeUrl = "{% url 'articledetail' object.slug object.id %}";
+                                var fullUrl = domain + relativeUrl;
+                                var message = encodeURIComponent("Check out this link!");
+                                var url = encodeURIComponent(fullUrl);
+                                var whatsappUrl = "https://wa.me/?text=" + message + "%20" + url;
+                                window.open(whatsappUrl, '_blank');
+                            });
+                        </script>
+                        <a href="#" class="btn" id="twitter-share-link" target="_blank">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <script>
+                            document.getElementById('twitter-share-link').addEventListener('click', function(event) {
+                                event.preventDefault();
+                                var domain = "https://timesperson.com";
+                                var relativeUrl = "{% url 'articledetail' object.slug object.id %}";
+                                var fullUrl = domain + relativeUrl;
+                                var text = encodeURIComponent("Check out this article!");
+                                var url = encodeURIComponent(fullUrl);
+                                var twitterUrl = "https://twitter.com/intent/tweet?text=" + text + "&url=" + url;
+                                window.open(twitterUrl, '_blank');
+                            });
+                        </script>
+                        <a href="#" class="btn" id="linkedin-share-link" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <script>
+                            document.getElementById('linkedin-share-link').addEventListener('click', function(event) {
+                                event.preventDefault();
+                                var domain = "https://timesperson.com";
+                                var relativeUrl = "{% url 'articledetail' object.slug object.id %}";
+                                var fullUrl = domain + relativeUrl;
+                                var encodedUrl = encodeURIComponent(fullUrl);
+                                var encodedTitle = encodeURIComponent("Check out this article!");
+                                var encodedSummary = encodeURIComponent("A brief summary or introduction of the article.");
+                                var linkedinUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodedUrl +
+                                                "&title=" + encodedTitle +
+                                                "&summary=" + encodedSummary;
+                                window.open(linkedinUrl, '_blank');
+                            });
+                        </script>
                         <button onclick="copyUrl()" class="btn" ><i class="bi bi-share-fill"></i></button>
                         <script>
                             function copyUrl() {
