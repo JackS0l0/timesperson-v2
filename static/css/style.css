@@ -22,26 +22,6 @@ html {
   margin: auto;
   height: 100px;
 }
-html #loading {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgb(10, 10, 10);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-}
-html .spinner {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-html .spinner img {
-  width: 60vw;
-}
 
 body {
   font-family: Georgia, serif;
@@ -340,6 +320,9 @@ body main .mainClass .postClass .postHeader .info .circle {
 body main .mainClass .postClass .txtBlock {
   margin: 3vw 19vw;
 }
+body main .mainClass .postClass .txtBlock hr {
+  margin: none;
+}
 body main .mainClass .postClass .txtBlock .video {
   display: flex;
   justify-content: center;
@@ -356,6 +339,7 @@ body main .mainClass .postClass .txtBlock .img img {
   height: 70vh;
   -o-object-position: top;
      object-position: top;
+  margin-bottom: 2vw;
 }
 body main .mainClass .postClass .txtBlock blockquote {
   border-left: 1px solid #ccc;
