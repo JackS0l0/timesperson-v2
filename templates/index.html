@@ -324,7 +324,7 @@
                     </div>
                 {% endfor %}
                 <div class="rightSide">
-                    {% for post in articles_lifestyle_mob %}
+                    {% for post in articles_lifestyle_small %}
                         <div class="smallPost">
                             <div class="img">
                                 <a href="{% url 'articledetail' post.slug post.id %}">
@@ -341,7 +341,7 @@
                 </div>
             </div>
             <div class="mobClass">
-                {% for post in articles_1318 %}
+                {% for post in articles_lifestyle_mob %}
                     <div class="mobpost">
                         <div class="img">
                             <a href="{% url 'articledetail' post.slug post.id %}">
