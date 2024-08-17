@@ -187,6 +187,9 @@ body{
                             a{
                                 img{
                                     width: 20vw;
+                                    height: 20vh;
+                                    object-fit: cover;
+                                    object-position: top;
                                 }
                             }
                         }
@@ -220,6 +223,7 @@ body{
                             }
                             p{
                                 text-align: end;
+                                color: $grey;
                             }
                         }
                     }
@@ -475,6 +479,9 @@ body{
                 margin: 3vw;
                 row-gap: 3vw;
                 .editorPosts{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .img{
                         a{
                             img{
@@ -487,8 +494,9 @@ body{
                     }
                     .info{
                         display: flex;
+                        height: 100%;
                         flex-direction: column;
-                        bottom: 1vw;
+                        justify-content: space-between;
                         a:first-child{
                             color: $grey;
                             margin: 1vw 0;
@@ -872,6 +880,9 @@ body.dark-mode{
                         a:first-child:hover{
                             color: white;
                         }
+                        p{
+                            color: $grey-darkmode;
+                        }
                     }
                 }
             }
@@ -1103,6 +1114,7 @@ body.dark-mode{
                         }
                     }
                     .postHeader{
+                        margin: 2vw 4vw;
                         .name{
                             font-size: 4vw;
                         }

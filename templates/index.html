@@ -171,11 +171,11 @@
                             <a href="{% url 'articledetail' post.slug post.id %}">
                                 <img src="{{post.img}}" alt="foto">
                             </a>
-                            <div class="info">
-                                <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
-                                <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
-                                <p>{{post.date|date:"d F, Y"}}</p>
-                            </div>
+                        </div>
+                        <div class="info">
+                            <a href="{% url 'categoriesDetail' post.category.slug post.category.id %}">{{post.category}}</a>
+                            <a href="{% url 'articledetail' post.slug post.id %}">{{post.name}}</a>
+                            <p>{{post.date|date:"d F, Y"}}</p>
                         </div>
                     </div>
                 {% endfor %}

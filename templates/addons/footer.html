@@ -10,7 +10,9 @@
                 <div class="img">
                     <img src="https://res.cloudinary.com/dqtawsw9t/image/upload/f_auto,q_auto/hil7riojies8ewmlbso2" id="logo">
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam facere eum voluptatibus molestias veritatis error vel commodi, cum sequi recusandae sapiente repudiandae accusamus numquam est. Earum consequuntur laudantium tempore est?</p>
+                {% for post in aboutinfooter %}
+                <p>{{post.txt}}</p>
+                {% endfor %}
                 <div class="socialicons">
                     <a href="https://www.linkedin.com/company/times-person" target="_blank"><i class="bi bi-linkedin"></i></a>
                     <a href="https://www.instagram.com/timespersonmagazine?igsh=NjFpbjlhcThhYW96" target="_blank"><i class="bi bi-instagram"></i></a>

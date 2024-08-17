@@ -181,6 +181,11 @@ body main .mainClass .lifestyleClass .rightSide .smallPost .img {
 }
 body main .mainClass .lifestyleClass .rightSide .smallPost .img a img {
   width: 20vw;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 body main .mainClass .lifestyleClass .rightSide .smallPost .info {
   display: flex;
@@ -212,6 +217,7 @@ body main .mainClass .lifestyleClass .rightSide .smallPost .info a:hover {
 }
 body main .mainClass .lifestyleClass .rightSide .smallPost .info p {
   text-align: end;
+  color: rgba(30, 30, 30, 0.5);
 }
 body main .mainClass .searchClass {
   display: flex;
@@ -286,7 +292,6 @@ body main .mainClass .postClass hr {
   margin: 2vw 0;
   opacity: 0.5;
   border: 0.7px solid rgba(30, 30, 30, 0.5);
-  margin: 0 19vw;
 }
 body main .mainClass .postClass .postHeader {
   display: flex;
@@ -319,9 +324,6 @@ body main .mainClass .postClass .postHeader .info .circle {
 }
 body main .mainClass .postClass .txtBlock {
   margin: 3vw 19vw;
-}
-body main .mainClass .postClass .txtBlock hr {
-  margin: none;
 }
 body main .mainClass .postClass .txtBlock .video {
   display: flex;
@@ -451,6 +453,11 @@ body main .mainClass .editorsClass {
   margin: 3vw;
   row-gap: 3vw;
 }
+body main .mainClass .editorsClass .editorPosts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 body main .mainClass .editorsClass .editorPosts .img a img {
   width: 45vw;
   height: 55vh;
@@ -461,8 +468,9 @@ body main .mainClass .editorsClass .editorPosts .img a img {
 }
 body main .mainClass .editorsClass .editorPosts .info {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  bottom: 1vw;
+  justify-content: space-between;
 }
 body main .mainClass .editorsClass .editorPosts .info a:first-child {
   color: rgba(30, 30, 30, 0.5);
@@ -790,6 +798,9 @@ body.dark-mode main .mainClass .lifestyleClass .smallPost .info a:first-child {
 body.dark-mode main .mainClass .lifestyleClass .smallPost .info a:first-child:hover {
   color: white;
 }
+body.dark-mode main .mainClass .lifestyleClass .smallPost .info p {
+  color: rgba(255, 255, 255, 0.2);
+}
 body.dark-mode main .mainClass .searchres a {
   color: rgba(255, 255, 255, 0.2);
 }
@@ -938,6 +949,9 @@ body.dark-mode a {
   }
   body main .mainClass .postClass .shareBlock .links .btn {
     font-size: 5vw;
+  }
+  body main .mainClass .postClass .postHeader {
+    margin: 2vw 4vw;
   }
   body main .mainClass .postClass .postHeader .name {
     font-size: 4vw;
