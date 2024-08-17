@@ -310,7 +310,6 @@ body{
                     margin: 2vw 0;
                     opacity: 0.5;
                     border: 0.7px solid $grey;
-                    margin: 0 19vw;
                 }
                 .postHeader{
                      display: flex;
@@ -342,9 +341,6 @@ body{
                      }
                  }
                  .txtBlock{
-                    hr{
-                        margin: none;
-                    }
                      margin: 3vw 19vw;
                      .video{
                          display: flex;
