@@ -2,9 +2,8 @@ from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8p5po85p2dry^!7mwcj6#x!c771zlg&rzu@##fqnr4)df)&ll_'
-DEBUG = True
-# ALLOWED_HOSTS = ["https://timesperson.com","timesperson.com"]
-ALLOWED_HOSTS = ["*"]
+DEBUG = False
+ALLOWED_HOSTS = ["https://timesperson.com","timesperson.com"]
 INSTALLED_APPS = [
     'modeltranslation',
     'django.contrib.admin',
